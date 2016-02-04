@@ -7,3 +7,23 @@
 //
 
 import Foundation
+
+class EntryController {
+    
+    static var sharedController = EntryController()
+    
+    var entries: [Entry]
+
+    init() {
+        entries = []
+    }
+    
+    func addEntry(entry: Entry) {
+        entries.append(entry)
+    }
+    
+    // Why same var & class?
+    func removeEntry(entry: Entry) {
+        entries.removeAtIndex(indexPath.row)
+    }
+}

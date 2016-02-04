@@ -7,3 +7,15 @@
 //
 
 import Foundation
+
+class Entry {
+    let title: String
+    let body: String
+    let timestamp: String
+    
+    init(title: String, body: String, timestamp: String) {
+        self.title = title
+        self.body = body
+        self.timestamp = timestamp
+    }
+}
