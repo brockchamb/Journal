@@ -22,8 +22,8 @@ class EntryController {
         entries.append(entry)
     }
     
-    // Why same var & class?
-    func removeEntry(entry: Entry) {
+    // Why NSIndexPath?
+    func removeEntry(indexPath: NSIndexPath) {
         entries.removeAtIndex(indexPath.row)
     }
 }

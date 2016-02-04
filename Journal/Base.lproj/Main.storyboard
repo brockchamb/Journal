@@ -17,7 +17,7 @@
                                 <rect key="frame" x="0.0" y="92" width="600" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="eY9-z2-OdK" id="KOI-Pg-Di0">
-                                    <rect key="frame" x="0.0" y="0.0" width="600" height="43.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="43"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
                             </tableViewCell>
@@ -27,7 +27,9 @@
                             <outlet property="delegate" destination="Fqh-WZ-kVM" id="yJ7-Ft-Mlo"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="QgJ-Zg-oqi"/>
+                    <navigationItem key="navigationItem" id="QgJ-Zg-oqi">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="sVa-nE-tTt"/>
+                    </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="H9p-Tj-OW6" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
