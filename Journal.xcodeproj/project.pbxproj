@@ -7,8 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		15BB2BB71C64059A00DA64DF /* Entry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15BB2BB61C64059A00DA64DF /* Entry.swift */; };
+		15BB2BB91C64062200DA64DF /* EntryController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15BB2BB81C64062200DA64DF /* EntryController.swift */; };
 		68816AC81BBB5405000569CE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68816AC71BBB5405000569CE /* AppDelegate.swift */; };
-		68816ACA1BBB5405000569CE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68816AC91BBB5405000569CE /* ViewController.swift */; };
 		68816ACD1BBB5405000569CE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 68816ACB1BBB5405000569CE /* Main.storyboard */; };
 		68816ACF1BBB5405000569CE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 68816ACE1BBB5405000569CE /* Assets.xcassets */; };
 		68816AD21BBB5405000569CE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 68816AD01BBB5405000569CE /* LaunchScreen.storyboard */; };
@@ -34,9 +35,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		15BB2BB61C64059A00DA64DF /* Entry.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Entry.swift; sourceTree = "<group>"; };
+		15BB2BB81C64062200DA64DF /* EntryController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EntryController.swift; sourceTree = "<group>"; };
 		68816AC41BBB5405000569CE /* Journal.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Journal.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		68816AC71BBB5405000569CE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		68816AC91BBB5405000569CE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		68816ACC1BBB5405000569CE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		68816ACE1BBB5405000569CE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		68816AD11BBB5405000569CE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -98,7 +100,8 @@
 			isa = PBXGroup;
 			children = (
 				68816AC71BBB5405000569CE /* AppDelegate.swift */,
-				68816AC91BBB5405000569CE /* ViewController.swift */,
+				15BB2BB61C64059A00DA64DF /* Entry.swift */,
+				15BB2BB81C64062200DA64DF /* EntryController.swift */,
 				68816ACB1BBB5405000569CE /* Main.storyboard */,
 				68816ACE1BBB5405000569CE /* Assets.xcassets */,
 				68816AD01BBB5405000569CE /* LaunchScreen.storyboard */,
@@ -255,7 +258,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				68816ACA1BBB5405000569CE /* ViewController.swift in Sources */,
+				15BB2BB71C64059A00DA64DF /* Entry.swift in Sources */,
+				15BB2BB91C64062200DA64DF /* EntryController.swift in Sources */,
 				68816AC81BBB5405000569CE /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -483,6 +487,7 @@
 				68816AEE1BBB5406000569CE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		68816AEF1BBB5406000569CE /* Build configuration list for PBXNativeTarget "JournalTests" */ = {
 			isa = XCConfigurationList;
@@ -491,6 +496,7 @@
 				68816AF11BBB5406000569CE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		68816AF21BBB5406000569CE /* Build configuration list for PBXNativeTarget "JournalUITests" */ = {
 			isa = XCConfigurationList;
@@ -499,6 +505,7 @@
 				68816AF41BBB5406000569CE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
