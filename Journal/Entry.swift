@@ -19,3 +19,7 @@ class Entry {
         self.timestamp = timestamp
     }
 }
+
+func ==(lhs: Entry, rhs: Entry) {
+    lhs.title == rhs.title && lhs.body == rhs.body && lhs.timestamp == rhs.timestamp
+}
