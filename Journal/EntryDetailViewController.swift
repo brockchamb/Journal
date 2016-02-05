@@ -17,22 +17,26 @@ class EntryDetailViewController: UIViewController, UITextFieldDelegate {
         entryTitleTextField.text = ""
         entryBodyTextField.text = ""
     }
-    
-    
-    
-    @IBAction func entrySaveButton(sender: UIBarButtonItem) {
-        let entry = Entry(title: entryTitleTextField.text, body: entryBodyTextField.text)
+
+    @IBAction func saveEntryButtonTapped(sender: AnyObject) {
+        
+        let entry = Entry(title: entryTitleTextField.text!, body: entryBodyTextField.text)
         EntryController.sharedController.addEntry(entry)
         self.navigationController?.popToRootViewControllerAnimated(true)
-        
     }
+    
+  
     var entry: Entry?
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        
+       
     }
+    
+    
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
@@ -45,15 +49,18 @@ class EntryDetailViewController: UIViewController, UITextFieldDelegate {
         entryTitleTextField.resignFirstResponder()
         return true
     }
+    
+    func updateWithEntry(entry: Entry) {
+        entryTitleTextField.text = entry.title
+        entryBodyTextField.text = entry.body
+        
+    }
 
-    /*
+    
     // MARK: - Navigation
 
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
+   
+   
+
 
 }

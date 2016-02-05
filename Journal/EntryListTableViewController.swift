@@ -12,6 +12,8 @@ class EntryListTableViewController: UITableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+         EntryController.sharedController.loadFromPersistenceStore()
     }
 
     override func didReceiveMemoryWarning() {
@@ -83,15 +85,27 @@ class EntryListTableViewController: UITableViewController {
         return true
     }
     */
+    
+    
 
-    /*
+    
     // MARK: - Navigation
+    
 
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
+    
+    
+
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+        if segue.identifier == "sopenTextField" {
+            let detailViewController = segue.destinationViewController as? EntryDetailViewController
+            
+            if let cell = sender as? UITableViewCell, indexPath = tableView.indexPathForCell(cell) {
+                let entry = EntryController.sharedController.entries[indexPath.row]
+                detailViewController?.entry = entry
+            }
+            
+        }
+        
     }
-    */
 
 }
