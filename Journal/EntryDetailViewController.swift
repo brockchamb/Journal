@@ -11,6 +11,22 @@ import UIKit
 class EntryDetailViewController: UIViewController, UITextFieldDelegate {
 
     @IBOutlet weak var entryTitleTextField: UITextField!
+    @IBOutlet weak var entryBodyTextField: UITextView!
+    @IBAction func entryClearButton(sender: UIButton) {
+        
+        entryTitleTextField.text = ""
+        entryBodyTextField.text = ""
+    }
+    
+    
+    
+    @IBAction func entrySaveButton(sender: UIBarButtonItem) {
+        let entry = Entry(title: entryTitleTextField.text, body: entryBodyTextField.text)
+        EntryController.sharedController.addEntry(entry)
+        self.navigationController?.popToRootViewControllerAnimated(true)
+        
+    }
+    var entry: Entry?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -29,7 +45,6 @@ class EntryDetailViewController: UIViewController, UITextFieldDelegate {
         entryTitleTextField.resignFirstResponder()
         return true
     }
-    
 
     /*
     // MARK: - Navigation

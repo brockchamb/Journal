@@ -9,14 +9,14 @@
 import Foundation
 
 class Entry {
-    let title: String
-    let body: String
-    let timestamp: String
+    let title: String?
+    let body: String?
+    let timestamp = NSDate()
     
-    init(title: String, body: String, timestamp: String) {
+    init(title: String?, body: String?) {
         self.title = title
         self.body = body
-        self.timestamp = timestamp
+        
     }
 }
 
