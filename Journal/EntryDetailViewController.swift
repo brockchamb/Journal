@@ -20,7 +20,7 @@ class EntryDetailViewController: UIViewController, UITextFieldDelegate {
 
     @IBAction func saveEntryButtonTapped(sender: AnyObject) {
         
-        let entry = Entry(title: entryTitleTextField.text!, body: entryBodyTextField.text)
+        let entry = Entry(title: entryTitleTextField.text!, text: entryBodyTextField.text)
         EntryController.sharedController.addEntry(entry)
         self.navigationController?.popToRootViewControllerAnimated(true)
     }
@@ -52,7 +52,7 @@ class EntryDetailViewController: UIViewController, UITextFieldDelegate {
     
     func updateWithEntry(entry: Entry) {
         entryTitleTextField.text = entry.title
-        entryBodyTextField.text = entry.body
+        entryBodyTextField.text = entry.text
         
     }
 

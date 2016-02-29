@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import CoreData
 
 class EntryController {
     
@@ -14,35 +15,75 @@ class EntryController {
     
     static var sharedController = EntryController()
     
-    var entries: [Entry]
+    var entries: [Entry] {
+        let request = NSFetchRequest(entityName: "Entry")
+        
+        let moc = Stack.sharedStack.managedObjectContext
+        
+        do {
+            return try moc.executeFetchRequest(request) as! [Entry]
+            
+        } catch {
+            return []
+            
+        }
+    }
 
-    init() {
-        entries = []
-        self.loadFromPersistenceStore()
+    
+    func addEntry(entry: Entry) {
+        
+        self.saveToPersistentStore()
     }
     
-    func loadFromPersistenceStore() {
+    func removeEntry(entry: Entry) {
         
-        let entriesFromDefaults = NSUserDefaults.standardUserDefaults().objectForKey(entryKey) as? [[String:AnyObject]]
+        entry.managedObjectContext?.deleteObject(entry)
         
-        if let entry = entriesFromDefaults {
-            self.entries = entry.map({Entry(dictionary: $0)!})
-        }
+        saveToPersistentStore()
+
     }
     
     func saveToPersistentStore() {
-        let entriesDict = self.entries.map({$0.dictCopy()})
-        NSUserDefaults.standardUserDefaults().setObject(entriesDict, forKey: entryKey)
+        
+        let moc = Stack.sharedStack.managedObjectContext
+        
+        do {
+            try moc.save()
+            
+        } catch {
+            print("Error saving Managed Object Context. Item not saved")
+        }
+
     }
     
-    func addEntry(entry: Entry) {
-        entries.append(entry)
-        self.saveToPersistentStore()
-    }
+
     
-    // Why NSIndexPath?
-    func removeEntry(indexPath: NSIndexPath) {
-        entries.removeAtIndex(indexPath.row)
-        self.saveToPersistentStore()
-    }
+
+    
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

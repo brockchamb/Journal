@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		15BB2BB71C64059A00DA64DF /* Entry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15BB2BB61C64059A00DA64DF /* Entry.swift */; };
 		15BB2BB91C64062200DA64DF /* EntryController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15BB2BB81C64062200DA64DF /* EntryController.swift */; };
 		68816AC81BBB5405000569CE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68816AC71BBB5405000569CE /* AppDelegate.swift */; };
 		68816ACD1BBB5405000569CE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 68816ACB1BBB5405000569CE /* Main.storyboard */; };
@@ -15,8 +14,15 @@
 		68816AD21BBB5405000569CE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 68816AD01BBB5405000569CE /* LaunchScreen.storyboard */; };
 		68816ADD1BBB5406000569CE /* JournalTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68816ADC1BBB5406000569CE /* JournalTests.swift */; };
 		68816AE81BBB5406000569CE /* JournalUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68816AE71BBB5406000569CE /* JournalUITests.swift */; };
+		847FBA601C694E980006C0AD /* Note.swift in Sources */ = {isa = PBXBuildFile; fileRef = 847FBA5F1C694E980006C0AD /* Note.swift */; };
 		84B8338D1C640D87007A2D15 /* EntryListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B8338C1C640D87007A2D15 /* EntryListTableViewController.swift */; };
 		84B8338F1C641750007A2D15 /* EntryDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B8338E1C641750007A2D15 /* EntryDetailViewController.swift */; };
+		84FFC44A1C7242EB00B8D03B /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 84FFC4481C7242EB00B8D03B /* Model.xcdatamodeld */; };
+		84FFC44D1C72489700B8D03B /* Entry+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84FFC44B1C72489700B8D03B /* Entry+CoreDataProperties.swift */; };
+		84FFC44E1C72489700B8D03B /* Entry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84FFC44C1C72489700B8D03B /* Entry.swift */; };
+		84FFC44F1C72493D00B8D03B /* Entry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84FFC44C1C72489700B8D03B /* Entry.swift */; };
+		84FFC4501C72494300B8D03B /* Entry+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84FFC44B1C72489700B8D03B /* Entry+CoreDataProperties.swift */; };
+		84FFC4521C724A7100B8D03B /* Stack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84FFC4511C724A7100B8D03B /* Stack.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,7 +43,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		15BB2BB61C64059A00DA64DF /* Entry.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Entry.swift; sourceTree = "<group>"; };
 		15BB2BB81C64062200DA64DF /* EntryController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EntryController.swift; sourceTree = "<group>"; };
 		68816AC41BBB5405000569CE /* Journal.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Journal.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		68816AC71BBB5405000569CE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -51,8 +56,13 @@
 		68816AE31BBB5406000569CE /* JournalUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JournalUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		68816AE71BBB5406000569CE /* JournalUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JournalUITests.swift; sourceTree = "<group>"; };
 		68816AE91BBB5406000569CE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		847FBA5F1C694E980006C0AD /* Note.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Note.swift; sourceTree = "<group>"; };
 		84B8338C1C640D87007A2D15 /* EntryListTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EntryListTableViewController.swift; sourceTree = "<group>"; };
 		84B8338E1C641750007A2D15 /* EntryDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EntryDetailViewController.swift; sourceTree = "<group>"; };
+		84FFC4491C7242EB00B8D03B /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
+		84FFC44B1C72489700B8D03B /* Entry+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Entry+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		84FFC44C1C72489700B8D03B /* Entry.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Entry.swift; sourceTree = "<group>"; };
+		84FFC4511C724A7100B8D03B /* Stack.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Stack.swift; path = ../Stack.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +93,8 @@
 		68816ABB1BBB5405000569CE = {
 			isa = PBXGroup;
 			children = (
+				84FFC44B1C72489700B8D03B /* Entry+CoreDataProperties.swift */,
+				84FFC44C1C72489700B8D03B /* Entry.swift */,
 				68816AC61BBB5405000569CE /* Journal */,
 				68816ADB1BBB5406000569CE /* JournalTests */,
 				68816AE61BBB5406000569CE /* JournalUITests */,
@@ -103,13 +115,15 @@
 		68816AC61BBB5405000569CE /* Journal */ = {
 			isa = PBXGroup;
 			children = (
+				84FFC4511C724A7100B8D03B /* Stack.swift */,
 				68816AC71BBB5405000569CE /* AppDelegate.swift */,
-				15BB2BB61C64059A00DA64DF /* Entry.swift */,
+				847FBA5F1C694E980006C0AD /* Note.swift */,
 				15BB2BB81C64062200DA64DF /* EntryController.swift */,
 				68816ACB1BBB5405000569CE /* Main.storyboard */,
 				84B8338E1C641750007A2D15 /* EntryDetailViewController.swift */,
 				84B8338C1C640D87007A2D15 /* EntryListTableViewController.swift */,
 				68816ACE1BBB5405000569CE /* Assets.xcassets */,
+				84FFC4481C7242EB00B8D03B /* Model.xcdatamodeld */,
 				68816AD01BBB5405000569CE /* LaunchScreen.storyboard */,
 				68816AD31BBB5405000569CE /* Info.plist */,
 			);
@@ -264,8 +278,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				15BB2BB71C64059A00DA64DF /* Entry.swift in Sources */,
+				84FFC44E1C72489700B8D03B /* Entry.swift in Sources */,
+				84FFC4521C724A7100B8D03B /* Stack.swift in Sources */,
+				847FBA601C694E980006C0AD /* Note.swift in Sources */,
+				84FFC44D1C72489700B8D03B /* Entry+CoreDataProperties.swift in Sources */,
 				15BB2BB91C64062200DA64DF /* EntryController.swift in Sources */,
+				84FFC44A1C7242EB00B8D03B /* Model.xcdatamodeld in Sources */,
 				84B8338D1C640D87007A2D15 /* EntryListTableViewController.swift in Sources */,
 				84B8338F1C641750007A2D15 /* EntryDetailViewController.swift in Sources */,
 				68816AC81BBB5405000569CE /* AppDelegate.swift in Sources */,
@@ -276,6 +294,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84FFC4501C72494300B8D03B /* Entry+CoreDataProperties.swift in Sources */,
+				84FFC44F1C72493D00B8D03B /* Entry.swift in Sources */,
 				68816ADD1BBB5406000569CE /* JournalTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -516,6 +536,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		84FFC4481C7242EB00B8D03B /* Model.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				84FFC4491C7242EB00B8D03B /* Model.xcdatamodel */,
+			);
+			currentVersion = 84FFC4491C7242EB00B8D03B /* Model.xcdatamodel */;
+			path = Model.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 68816ABC1BBB5405000569CE /* Project object */;
 }

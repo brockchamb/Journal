@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="788-Tz-dc6">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="788-Tz-dc6">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
@@ -58,7 +58,7 @@
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Title" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="MdV-hR-Q6d">
                                 <rect key="frame" x="243" y="64" width="97" height="30"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="97" id="gsd-VD-NSV"/>
+                                    <constraint firstAttribute="width" constant="97" id="tNY-ei-EfB"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
@@ -70,39 +70,39 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KHv-kY-yTU">
-                                <rect key="frame" x="466" y="488" width="46" height="30"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="46" id="eO7-8S-c8Z"/>
-                                </constraints>
-                                <state key="normal" title="Save"/>
-                                <connections>
-                                    <action selector="saveEntryButtonTapped:" destination="D1G-5Y-9pt" eventType="touchUpInside" id="aDF-v6-T69"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mql-Ua-f0D">
-                                <rect key="frame" x="38" y="488" width="46" height="30"/>
+                                <rect key="frame" x="20" y="488" width="46" height="30"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="46" id="tN9-y8-Z9d"/>
+                                    <constraint firstAttribute="width" constant="46" id="d42-a6-CRv"/>
                                 </constraints>
                                 <state key="normal" title="Clear"/>
                                 <connections>
                                     <action selector="entryClearButton:" destination="D1G-5Y-9pt" eventType="touchUpInside" id="CGx-nx-nY1"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KHv-kY-yTU">
+                                <rect key="frame" x="534" y="488" width="46" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="46" id="oF9-LL-sGY"/>
+                                </constraints>
+                                <state key="normal" title="Save"/>
+                                <connections>
+                                    <action selector="saveEntryButtonTapped:" destination="D1G-5Y-9pt" eventType="touchUpInside" id="aDF-v6-T69"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="mJC-t7-H7R" firstAttribute="centerY" secondItem="ZkB-mx-w7b" secondAttribute="centerY" id="3sy-kx-n23"/>
-                            <constraint firstItem="mJC-t7-H7R" firstAttribute="leading" secondItem="ZkB-mx-w7b" secondAttribute="leadingMargin" id="DbN-ka-JyY"/>
-                            <constraint firstItem="mql-Ua-f0D" firstAttribute="leading" secondItem="ZkB-mx-w7b" secondAttribute="leadingMargin" constant="18" id="L0f-rs-sCq"/>
-                            <constraint firstItem="mJC-t7-H7R" firstAttribute="top" secondItem="MdV-hR-Q6d" secondAttribute="bottom" constant="20" id="S7V-OG-49E"/>
-                            <constraint firstItem="MdV-hR-Q6d" firstAttribute="leading" secondItem="ZkB-mx-w7b" secondAttribute="leading" constant="243" id="eH2-HE-4Cs"/>
-                            <constraint firstItem="mql-Ua-f0D" firstAttribute="baseline" secondItem="KHv-kY-yTU" secondAttribute="baseline" id="eLS-fd-T6S"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="KHv-kY-yTU" secondAttribute="trailing" constant="68" id="htv-3w-H2c"/>
-                            <constraint firstItem="mql-Ua-f0D" firstAttribute="top" secondItem="mJC-t7-H7R" secondAttribute="bottom" constant="2" id="lH9-ff-l6J"/>
-                            <constraint firstItem="mJC-t7-H7R" firstAttribute="trailing" secondItem="ZkB-mx-w7b" secondAttribute="trailingMargin" id="upL-6g-IGZ"/>
-                            <constraint firstItem="MdV-hR-Q6d" firstAttribute="top" secondItem="YZY-lc-ypR" secondAttribute="bottom" id="yqH-gO-E3Q"/>
+                            <constraint firstItem="mJC-t7-H7R" firstAttribute="leading" secondItem="mql-Ua-f0D" secondAttribute="leading" id="80S-Lb-LmV"/>
+                            <constraint firstItem="mJC-t7-H7R" firstAttribute="trailing" secondItem="KHv-kY-yTU" secondAttribute="trailing" id="8cV-Vb-iza"/>
+                            <constraint firstItem="mql-Ua-f0D" firstAttribute="top" secondItem="mJC-t7-H7R" secondAttribute="bottom" constant="2" id="FGS-2w-zDX"/>
+                            <constraint firstItem="mql-Ua-f0D" firstAttribute="baseline" secondItem="KHv-kY-yTU" secondAttribute="baseline" id="MqC-84-lwJ"/>
+                            <constraint firstItem="MdV-hR-Q6d" firstAttribute="top" secondItem="YZY-lc-ypR" secondAttribute="bottom" id="TyH-8h-Lvl"/>
+                            <constraint firstItem="mql-Ua-f0D" firstAttribute="leading" secondItem="ZkB-mx-w7b" secondAttribute="leadingMargin" id="fGS-L8-Eil"/>
+                            <constraint firstItem="MdV-hR-Q6d" firstAttribute="leading" secondItem="ZkB-mx-w7b" secondAttribute="leading" constant="243" id="iiv-J5-gtq"/>
+                            <constraint firstItem="mJC-t7-H7R" firstAttribute="trailing" secondItem="ZkB-mx-w7b" secondAttribute="trailingMargin" id="n0k-4W-N3t"/>
+                            <constraint firstItem="mJC-t7-H7R" firstAttribute="centerY" secondItem="ZkB-mx-w7b" secondAttribute="centerY" id="pbA-J4-sp4"/>
+                            <constraint firstItem="mJC-t7-H7R" firstAttribute="top" secondItem="MdV-hR-Q6d" secondAttribute="bottom" constant="20" id="yMS-J2-op7"/>
                         </constraints>
                     </view>
                     <toolbarItems/>
@@ -132,7 +132,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="IkE-UF-xJI" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="378" y="396"/>
+            <point key="canvasLocation" x="562" y="396"/>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>

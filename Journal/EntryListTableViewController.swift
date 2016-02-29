@@ -13,7 +13,6 @@ class EntryListTableViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-         EntryController.sharedController.loadFromPersistenceStore()
     }
 
     override func didReceiveMemoryWarning() {
@@ -56,7 +55,6 @@ class EntryListTableViewController: UITableViewController {
         if editingStyle == .Delete {
             
             //?
-            EntryController.sharedController.removeEntry(indexPath)
             
             tableView.deleteRowsAtIndexPaths([indexPath], withRowAnimation: .Fade)
         }
@@ -96,10 +94,16 @@ class EntryListTableViewController: UITableViewController {
     
 
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        // Check segue
+        // Define destinationController
+        // Show the data
+        
+        
         if segue.identifier == "sopenTextField" {
             let detailViewController = segue.destinationViewController as? EntryDetailViewController
             
-            if let cell = sender as? UITableViewCell, indexPath = tableView.indexPathForCell(cell) {
+            if let  cell = sender as? UITableViewCell,
+                    indexPath = tableView.indexPathForCell(cell) {
                 let entry = EntryController.sharedController.entries[indexPath.row]
                 detailViewController?.entry = entry
             }
